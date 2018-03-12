@@ -6,6 +6,7 @@ phases:
   build:
     commands:
       - npm run build
+      - cd dist
       - ls
 artifacts:
   type: zip
