@@ -7,9 +7,5 @@ phases:
     commands:
       - npm run build
       - cd dist
-artifacts:
-  type: zip
-  files: 
-    - '**/*'
-  base-directory: 'dist'
-  discard-paths: yes
+      - aws s3 cp dist/ s3://demo-pipeline-1/
+
