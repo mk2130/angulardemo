@@ -6,6 +6,5 @@ phases:
   build:
     commands:
       - npm run build
-      - cd dist
       - aws s3 cp dist/* s3://demo-pipeline-1/
 
